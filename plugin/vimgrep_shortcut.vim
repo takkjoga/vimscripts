@@ -15,7 +15,7 @@ function VimGrepShortcut(...)
             search_path_top = a:2
         endif
     endif
-    silent! execute 'tab vimgrep /' . search_text . '/ ' . search_path_top . ' | cwindow'
+    silent! execute 'tabedit +vimgrep\ /' . search_text . '/\ ' . search_path_top . '\ |\ cwindow'
 endfunction
 
 command VGS call VimGrepShortcut()
